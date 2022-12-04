@@ -17,6 +17,8 @@
 		F43BB4F7293C8CC200D9BE12 /* rose.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43BB4F6293C8CC200D9BE12 /* rose.storyboard */; };
 		F43BB4FA293C8D4600D9BE12 /* ShoppingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BB4F9293C8D4600D9BE12 /* ShoppingFile.swift */; };
 		F43BB4FD293C8D6600D9BE12 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BB4FC293C8D6600D9BE12 /* DataStore.swift */; };
+		F4627803293CA58300AA31AF /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4627802293CA58300AA31AF /* ShoppingListViewController.swift */; };
+		F4627805293CA62900AA31AF /* ShoppingListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4627804293CA62900AA31AF /* ShoppingListViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F43BB4F6293C8CC200D9BE12 /* rose.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = rose.storyboard; sourceTree = "<group>"; };
 		F43BB4F9293C8D4600D9BE12 /* ShoppingFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingFile.swift; sourceTree = "<group>"; };
 		F43BB4FC293C8D6600D9BE12 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		F4627802293CA58300AA31AF /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		F4627804293CA62900AA31AF /* ShoppingListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				F43BB4EF293C8C5F00D9BE12 /* isa.storyboard */,
+				F4627802293CA58300AA31AF /* ShoppingListViewController.swift */,
+				F4627804293CA62900AA31AF /* ShoppingListViewCell.swift */,
 			);
 			path = isa;
 			sourceTree = "<group>";
@@ -193,8 +199,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4627805293CA62900AA31AF /* ShoppingListViewCell.swift in Sources */,
 				F43BB4DC293C88C400D9BE12 /* AppDelegate.swift in Sources */,
 				F43BB4FD293C8D6600D9BE12 /* DataStore.swift in Sources */,
+				F4627803293CA58300AA31AF /* ShoppingListViewController.swift in Sources */,
 				F43BB4DE293C88C400D9BE12 /* SceneDelegate.swift in Sources */,
 				F43BB4FA293C8D4600D9BE12 /* ShoppingFile.swift in Sources */,
 			);
