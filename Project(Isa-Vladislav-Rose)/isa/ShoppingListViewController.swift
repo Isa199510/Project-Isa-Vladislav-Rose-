@@ -11,70 +11,64 @@ class ShoppingListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let pr1 = Purchase(name: "хлеб", quantity: 2, price: 30)
+        var shoppingOne = ShoppingLists("супермаркет")
+        shoppingOne.setPurchase(pr1, index: nil)
+        let shoppingTwo = ShoppingLists("рынок")
+        shoppingLists.append(shoppingOne)
+        shoppingLists.append(shoppingTwo)
+        
+    }
+    
+    @IBAction func newShoppingList(_ sender: Any) {
+        let alert = UIAlertController(title: "Новая метка", message: "Введите имя метки", preferredStyle: .alert)
+        alert.addTextField()
+        let ok = UIAlertAction(title: "Ok", style: .default) { action in
+            guard let text = alert.textFields?.first?.text else { return }
+            if !text.isEmpty {
+                let newShopping = ShoppingLists(text)
+                shoppingLists.append(newShopping)
+                self.tableView.reloadData()
+            }
+        }
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel)
+        alert.addAction(ok)
+        alert.addAction(cancel)
+        present(alert, animated: true)
     }
 
     // MARK: - Table view data source
-
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if shoppingLists[indexPath.row].totalPrice == 0 {
+            return 50
+        } else {
+            return 70
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         shoppingLists.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
             let shoppingCell = tableView.dequeueReusableCell(withIdentifier: "shoppingCell", for: indexPath) as? ShoppingListViewCell
         else { return UITableViewCell() }
-
-        // Configure the cell...
-
+        shoppingCell.configure(shoppingLists[indexPath.row])
         return shoppingCell
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
+            shoppingLists.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
