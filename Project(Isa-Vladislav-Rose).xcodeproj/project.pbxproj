@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F403A557293DE88700721F92 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403A556293DE88700721F92 /* temp.swift */; };
 		F43BB4DC293C88C400D9BE12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BB4DB293C88C400D9BE12 /* AppDelegate.swift */; };
 		F43BB4DE293C88C400D9BE12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BB4DD293C88C400D9BE12 /* SceneDelegate.swift */; };
 		F43BB4E3293C88C400D9BE12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43BB4E1293C88C400D9BE12 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F403A556293DE88700721F92 /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
 		F43BB4D8293C88C400D9BE12 /* Project(Isa-Vladislav-Rose).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project(Isa-Vladislav-Rose).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43BB4DB293C88C400D9BE12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F43BB4DD293C88C400D9BE12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F403A555293DE87A00721F92 /* temp */ = {
+			isa = PBXGroup;
+			children = (
+				F403A556293DE88700721F92 /* temp.swift */,
+			);
+			path = temp;
+			sourceTree = "<group>";
+		};
 		F43BB4CF293C88C400D9BE12 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 		F43BB4DA293C88C400D9BE12 /* Project(Isa-Vladislav-Rose) */ = {
 			isa = PBXGroup;
 			children = (
+				F403A555293DE87A00721F92 /* temp */,
 				F43BB4FB293C8D5A00D9BE12 /* DataStore */,
 				F43BB4F8293C8D2300D9BE12 /* Models */,
 				F43BB4F3293C8CAA00D9BE12 /* rose */,
@@ -204,6 +215,7 @@
 				F43BB4FD293C8D6600D9BE12 /* DataStore.swift in Sources */,
 				F4627803293CA58300AA31AF /* ShoppingListViewController.swift in Sources */,
 				F43BB4DE293C88C400D9BE12 /* SceneDelegate.swift in Sources */,
+				F403A557293DE88700721F92 /* temp.swift in Sources */,
 				F43BB4FA293C8D4600D9BE12 /* ShoppingFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
