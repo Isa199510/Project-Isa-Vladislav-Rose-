@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243B74EA293E02390022CFA5 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B74E9293E02390022CFA5 /* test.swift */; };
 		F403A557293DE88700721F92 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403A556293DE88700721F92 /* temp.swift */; };
 		F43BB4DC293C88C400D9BE12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BB4DB293C88C400D9BE12 /* AppDelegate.swift */; };
 		F43BB4DE293C88C400D9BE12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BB4DD293C88C400D9BE12 /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		243B74E9293E02390022CFA5 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		F403A556293DE88700721F92 /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
 		F43BB4D8293C88C400D9BE12 /* Project(Isa-Vladislav-Rose).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project(Isa-Vladislav-Rose).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43BB4DB293C88C400D9BE12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				F43BB4F4293C8CBC00D9BE12 /* vladislav.storyboard */,
+				243B74E9293E02390022CFA5 /* test.swift */,
 			);
 			path = vladislav;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				F43BB4FD293C8D6600D9BE12 /* DataStore.swift in Sources */,
 				F4627803293CA58300AA31AF /* ShoppingListViewController.swift in Sources */,
 				F43BB4DE293C88C400D9BE12 /* SceneDelegate.swift in Sources */,
+				243B74EA293E02390022CFA5 /* test.swift in Sources */,
 				F403A557293DE88700721F92 /* temp.swift in Sources */,
 				F43BB4FA293C8D4600D9BE12 /* ShoppingFile.swift in Sources */,
 			);
