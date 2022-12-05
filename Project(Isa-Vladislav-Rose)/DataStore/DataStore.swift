@@ -12,5 +12,3 @@ var shoppingLists = [ShoppingLists]()
 func getShoppingList() -> [ShoppingLists] {
     shoppingLists
 }
-
-print("Editing in GitHub")
