@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C64F99DF293DF61300051B6A /* NewGroceryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F99DE293DF61200051B6A /* NewGroceryViewController.swift */; };
+		C64F99E1293DF76800051B6A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64F99E0293DF76800051B6A /* Storyboard.storyboard */; };
 		F403A557293DE88700721F92 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403A556293DE88700721F92 /* temp.swift */; };
 		F43BB4DC293C88C400D9BE12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BB4DB293C88C400D9BE12 /* AppDelegate.swift */; };
 		F43BB4DE293C88C400D9BE12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43BB4DD293C88C400D9BE12 /* SceneDelegate.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		C64F99DE293DF61200051B6A /* NewGroceryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroceryViewController.swift; sourceTree = "<group>"; };
+		C64F99E0293DF76800051B6A /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		F403A556293DE88700721F92 /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
 		F43BB4D8293C88C400D9BE12 /* Project(Isa-Vladislav-Rose).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project(Isa-Vladislav-Rose).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43BB4DB293C88C400D9BE12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				F43BB4F6293C8CC200D9BE12 /* rose.storyboard */,
 				C64F99DE293DF61200051B6A /* NewGroceryViewController.swift */,
+				C64F99E0293DF76800051B6A /* Storyboard.storyboard */,
 			);
 			path = rose;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				F43BB4F5293C8CBC00D9BE12 /* vladislav.storyboard in Resources */,
 				F43BB4E5293C88C800D9BE12 /* Assets.xcassets in Resources */,
 				F43BB4F0293C8C5F00D9BE12 /* isa.storyboard in Resources */,
+				C64F99E1293DF76800051B6A /* Storyboard.storyboard in Resources */,
 				F43BB4E3293C88C400D9BE12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
