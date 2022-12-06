@@ -8,16 +8,30 @@
 import UIKit
 
 class ShoppingListViewCell: UITableViewCell {
+    
+    @IBOutlet var nameShoppingListLabel: UILabel!
+    @IBOutlet var totalPriceShoppingLabel: UILabel!
+    @IBOutlet var imageCheckbox: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tappedImage))
+        imageCheckbox.addGestureRecognizer(tap)
+        imageCheckbox.isUserInteractionEnabled = true
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func configure(_ shopping: ShoppingLists) {
+        nameShoppingListLabel.text = shopping.name
+        totalPriceShoppingLabel.text = shopping.totalPrice == 0 ? "" : String(format: "Общая сумма: %.1f₽", shopping.totalPrice)
+        imageCheckbox.image = UIImage(named: "checkboxFalse")
+    }
+    
+    @objc func tappedImage() {
+        imageCheckbox.image = imageCheckbox.image == UIImage(named: "checkboxFalse") ? UIImage(named: "checkboxTrue") : UIImage(named: "checkboxFalse")
     }
 
 }
